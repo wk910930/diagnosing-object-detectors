@@ -7,7 +7,7 @@ by Yodsawalai Chodpathumwan in Spring 2010 and Fall 2011 as an undergraduate
 RA.  The associated published paper is:
 
 D. Hoiem, Y. Chodpathumwan, and Q. Dai, 
-"Diagnosing Error in Object Detectors", ECCV 2012.
+[Diagnosing Error in Object Detectors](http://dhoiem.web.engr.illinois.edu/publications/eccv2012_detanalysis_derek.pdf), ECCV 2012.
 
 
 ###  How to Run 
