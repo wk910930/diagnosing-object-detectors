@@ -22,8 +22,8 @@ NORM_FRACT = 0.15; % parameter for setting normalized precision (default = 0.15)
 dataset = 'voc';  
 
 % specify which detectors to evaluate
-full_set = {'felzenszwalb_v2', 'felzenszwalb_v3', 'felzenszwalb_v4', 'vedaldi2009', 'cnn_v7-bb'}; % for reference
-detectors = {'felzenszwalb_v4', 'vedaldi2009', 'cnn_v7-bb'};  % detectors that will be analyzed
+full_set = {'candidate_detector1', 'candidate_detector2', 'candidate_detector3'}; % for reference
+detectors = {'candidate_detector4', 'candidate_detector5'};  % detectors that will be analyzed
 
 dataset_params = setDatasetParameters(dataset);
 objnames_all = dataset_params.objnames_all;
