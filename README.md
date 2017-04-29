@@ -52,24 +52,20 @@ CREATING A REPORT
 
 ##  Description of Folders 
 
-annotations: 
-Contains annotations for objects (excluding "difficult" objects, as defined
+[annotations](annotations/): Contains annotations for objects (excluding "difficult" objects, as defined
 by VOC annotations).  The file Labels.txt helps to explain the format.  
 Each file also contains whether the object was detected by the Felzenszwalb
 or the Vedaldi detector and the corresponding confidence, but this need not
 be used.
 
-src: 
-Contains code for reading the annotations and storing them in the PASCAL VOC
+[src](src/): Contains code for reading the annotations and storing them in the PASCAL VOC
 record structure.  Also contains code for computing normalized average 
 precision and making comparisons between different subsets of the data.
 
-results: 
-For each detector, contains tables of normalized AP for various subsets of 
+[results](results/): For each detector, contains tables of normalized AP for various subsets of 
 data and comparison plots.
 
-detections: 
-For each detector, contains a list of all detections above some threshold
+[detections](detections/): For each detector, contains a list of all detections above some threshold
 for each object.
 
 
