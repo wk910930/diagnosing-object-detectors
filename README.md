@@ -21,7 +21,7 @@ D. Hoiem, Y. Chodpathumwan, and Q. Dai,
 
 **CASE II:** PASCAL VOC 2007, your own detectors
 1) Create a text file of detector outfits with rows of `file_id conf x1 y1 x2 y2` (standard format, see [readDetections.m](src/readDetections.m)). Put this file in a subdirectory within detections.
-2) Add a corresponding entry to setDetectorInfo.m and update detector variable in detectionAnalysisScript.
+2) Add a corresponding entry to [setDetectorInfo.m](src/setDetectorInfo.m) and update detector variable in detectionAnalysisScript.
 3) Perform all steps of CASE I.
 
 **CASE III:** later versions of VOC
