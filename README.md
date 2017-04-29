@@ -14,13 +14,13 @@ D. Hoiem, Y. Chodpathumwan, and Q. Dai,
 
 ##  How to Run 
 
-CASE I: PASCAL VOC 2007, felzenszwalb or vedaldi detectors
+**CASE I:** PASCAL VOC 2007, felzenszwalb or vedaldi detectors
 1) In detectionAnalysisScript, set all flags on top to 1 (true)  
     (note: DO_SHOW_SURPRISING_MISSES is optional)
 2) Set the imdir path to a valid directory of VOC images
 3) Run detectionAnalysisScript in Matlab
 
-CASE II: PASCAL VOC 2007, your own detectors
+**CASE II:** PASCAL VOC 2007, your own detectors
 1) Create a text file of detector outfits with rows of 
    file_id conf x1 y1 x2 y2 (standard format, see readDetections.m).
    Put this file in a subdirectory within detections.
@@ -28,7 +28,7 @@ CASE II: PASCAL VOC 2007, your own detectors
    detectionAnalysisScript.
 3) Perform all steps of CASE I.
 
-CASE III: later versions of VOC
+**CASE III:** later versions of VOC
 Annotations are not currently available for detailed analysis of true detections.
 1) Modify setDatasetParameters.m: 
    a) Set the imdir, VOCsourcepath, and VOCset to correspond to the dataset
@@ -36,12 +36,12 @@ Annotations are not currently available for detailed analysis of true detections
       objnames_selected.
 2) Run as in CASE I or II
 
-Case IV: other datasets
+**Case IV:** other datasets
 If detections are bounding boxes and evaluation criteria is similar, use 'voc_compatible'
 as detector type and update setDatasetParameters.m.  Otherwise, more modification may be
 required; see details in Code_Explanation.txt.  
 
-CREATING A REPORT
+**CREATING A REPORT**
 1) The tex file for a report will be created for you in results/detname/tex.  
 2) Automatically remove whitespace from the figures using an Adobe Acrobat 
    batch process or this script for pdfcrop from Ross Girshick:
