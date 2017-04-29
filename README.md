@@ -34,7 +34,8 @@ Annotations are not currently available for detailed analysis of true detections
 **Case IV:** other datasets
 If detections are bounding boxes and evaluation criteria is similar, use 'voc_compatible' as detector type and update [setDatasetParameters.m](src/setDatasetParameters.m). Otherwise, more modification may be required; see details in [Code_Explanation.txt](Code_Explanation.txt).  
 
-**CREATING A REPORT**
+#### Creat A Report
+
 1) The tex file for a report will be created for you in results/detname/tex.  
 2) Automatically remove whitespace from the figures using an Adobe Acrobat 
    batch process or this script for pdfcrop from Ross Girshick:
