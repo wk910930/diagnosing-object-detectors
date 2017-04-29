@@ -59,12 +59,13 @@ by VOC annotations).  The file Labels.txt helps to explain the format. Each file
 
 ##  Description of Script/Functions 
 
-#### Detection Analysis Script
-  * TP_ANALYSIS: correlates detections with ground truth, assigns attributes such as occlusion and aspect to each object, and computes performance measures for various subsets of objects
-  * FP_ANALYSIS: computes fraction of top false positives due to localization error, confusion with similar objects, etc.; also computes the AP impact of false positives
-  * TP_DISPLAY: creates plots showing performance of detector for different subsets of objects, a summary plot, a text summary of characteristics of missed objects, and images of objects that are less confidently detected than expected
-  * FP_DISPLAY:  displays statistics of the frequency and impact of false positives, including creation of a table in a text file
-  * DO_TEX: creates tex files for compiling a report
+[detectionAnalysisScript.m](src/detectionAnalysisScript.m)
+
+  * `TP_ANALYSIS`: correlates detections with ground truth, assigns attributes such as occlusion and aspect to each object, and computes performance measures for various subsets of objects
+  * `FP_ANALYSIS`: computes fraction of top false positives due to localization error, confusion with similar objects, etc.; also computes the AP impact of false positives
+  * `TP_DISPLAY`: creates plots showing performance of detector for different subsets of objects, a summary plot, a text summary of characteristics of missed objects, and images of objects that are less confidently detected than expected
+  * `FP_DISPLAY`:  displays statistics of the frequency and impact of false positives, including creation of a table in a text file
+  * `DO_TEX`: creates tex files for compiling a report
 
 #### Other useful functions
   * displayTopFP: displays most confident false positives
