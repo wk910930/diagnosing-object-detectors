@@ -59,7 +59,7 @@ by VOC annotations).  The file Labels.txt helps to explain the format. Each file
 
 ##  Description of Script/Functions 
 
-detectionAnalysisScript: the main script for analysis
+### Detection Analysis Script
   TP_ANALYSIS: correlates detections with ground truth, assigns attributes
                such as occlusion and aspect to each object, and computes
                performance measures for various subsets of objects
@@ -74,7 +74,7 @@ detectionAnalysisScript: the main script for analysis
                positives, including creation of a table in a text file
   DO_TEX:      creates tex files for compiling a report
 
-Other useful functions
+### Other useful functions
   displayTopFP: displays most confident false positives
   displayRankedPositives: shows detection confidences of a subset of objects, 
                           from most to least confident
