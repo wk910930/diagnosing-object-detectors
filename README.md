@@ -26,9 +26,9 @@ D. Hoiem, Y. Chodpathumwan, and Q. Dai,
 
 **CASE III:** later versions of VOC
 Annotations are not currently available for detailed analysis of true detections.
-1) Modify setDatasetParameters.m: 
-   a) Set the imdir, VOCsourcepath, and VOCset to correspond to the dataset
-   b) Set objnames_extra = {};  change objnames_extra in DISPLAY_TP to objnames_selected.
+1) Modify [setDatasetParameters.m](src/setDatasetParameters.m): 
+   * Set the imdir, VOCsourcepath, and VOCset to correspond to the dataset
+   * Set objnames_extra = {}; change objnames_extra in DISPLAY_TP to objnames_selected.
 2) Run as in CASE I or II
 
 **Case IV:** other datasets
