@@ -15,7 +15,7 @@ D. Hoiem, Y. Chodpathumwan, and Q. Dai,
 ##  How to Run 
 
 **CASE I:** PASCAL VOC 2007, felzenszwalb or vedaldi detectors
-1) In [detectionAnalysisScript.m](src/detectionAnalysisScript.m), set all flags on top to 1 (true) (note: DO_SHOW_SURPRISING_MISSES is optional)
+1) In [detectionAnalysisScript.m](src/detectionAnalysisScript.m), set all flags on top to 1 (true) (note: `DO_SHOW_SURPRISING_MISSES` is optional)
 2) Set the imdir path to a valid directory of VOC images
 3) Run detectionAnalysisScript in Matlab
 
