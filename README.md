@@ -80,8 +80,8 @@ by VOC annotations).  The file Labels.txt helps to explain the format. Each file
 
 #### Other useful functions
   displayTopFP: displays most confident false positives
-  displayRankedPositives: shows detection confidences of a subset of objects, 
-                          from most to least confident
+
+  displayRankedPositives: shows detection confidences of a subset of objects, from most to least confident
 
 
 ##  Further Help 
