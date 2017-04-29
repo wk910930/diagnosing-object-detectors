@@ -10,7 +10,7 @@ D. Hoiem, Y. Chodpathumwan, and Q. Dai,
 [Diagnosing Error in Object Detectors](http://dhoiem.web.engr.illinois.edu/publications/eccv2012_detanalysis_derek.pdf), ECCV 2012.
 
 
-###  How to Run 
+##  How to Run 
 
 CASE I: PASCAL VOC 2007, felzenszwalb or vedaldi detectors
 1) In detectionAnalysisScript, set all flags on top to 1 (true)  
@@ -48,7 +48,7 @@ CREATING A REPORT
 3) Use a latex compiler on detectionAnalysisAutoReportTemplate to make the pdf.
 
 
-###  Description of Folders 
+##  Description of Folders 
 
 annotations: 
 Contains annotations for objects (excluding "difficult" objects, as defined
@@ -71,7 +71,7 @@ For each detector, contains a list of all detections above some threshold
 for each object.
 
 
-###  Description of Script/Functions 
+##  Description of Script/Functions 
 
 detectionAnalysisScript: the main script for analysis
   TP_ANALYSIS: correlates detections with ground truth, assigns attributes
@@ -94,8 +94,7 @@ Other useful functions
                           from most to least confident
 
 
-
-###  Further Help 
+##  Further Help 
 Contact dhoiem@illinois.edu if there is a problem with the annotations or code.
 If instructions are unclear or incomplete, please try to figure it out first and
 send me a corrected version of the instructions.  If you can't figure it out,
