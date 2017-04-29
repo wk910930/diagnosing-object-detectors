@@ -20,7 +20,7 @@ function dataset_params = setDatasetParameters(dataset)
 switch lower(dataset)
   case 'voc'
     dataset_params.imset = 'test';  % set used for analysis
-    dataset_params.imdir = '/home/dhoiem/data/pascal07/VOCdevkit/VOC2007/JPEGImages/'; % needs to be set for your computer
+    dataset_params.imdir = '/home/kwang/Documents/VOCdevkit/VOC2007/JPEGImages/'; % needs to be set for your computer
     dataset_params.VOCsourcepath = './VOCcode';  % change this for later VOC versions
     dataset_params.VOCset = 'VOC2007';
     addpath(dataset_params.VOCsourcepath);
