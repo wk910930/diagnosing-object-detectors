@@ -17,10 +17,10 @@ D. Hoiem, Y. Chodpathumwan, and Q. Dai,
 **CASE I:** PASCAL VOC 2007, felzenszwalb or vedaldi detectors
 1) In [detectionAnalysisScript.m](src/detectionAnalysisScript.m), set all flags on top to 1 (true) (note: `DO_SHOW_SURPRISING_MISSES` is optional)
 2) Set the [imdir](src/setDatasetParameters.m#L23) path to a valid directory of VOC images
-3) Run detectionAnalysisScript in Matlab
+3) Run [detectionAnalysisScript.m](src/detectionAnalysisScript.m) in Matlab
 
 **CASE II:** PASCAL VOC 2007, your own detectors
-1) Create a text file of detector outfits with rows of `file_id conf x1 y1 x2 y2` (standard format, see [readDetections.m](src/readDetections.m)). Put this file in a subdirectory within detections.
+1) Create a text file of detector outfits with rows of `file_id conf x1 y1 x2 y2` (standard format, see [readDetections.m](src/readDetections.m)). Put this file in a subdirectory within [detections](detections/).
 2) Add a corresponding entry to [setDetectorInfo.m](src/setDetectorInfo.m) and update detector variable in [detectionAnalysisScript.m](src/detectionAnalysisScript.m).
 3) Perform all steps of CASE I.
 
