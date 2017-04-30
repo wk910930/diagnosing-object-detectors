@@ -1,5 +1,21 @@
 # Diagnosing Object Detectors
 
+## Cition
+
+This project is modified from [here](http://dhoiem.web.engr.illinois.edu/projects/detectionAnalysis/). Please cite it in your publications if it helps your research:
+
+```
+@article{hoiem2012diagnosing,
+  title={Diagnosing error in object detectors},
+  author={Hoiem, Derek and Chodpathumwan, Yodsawalai and Dai, Qieyun},
+  journal={Computer Vision--ECCV 2012},
+  pages={340--353},
+  year={2012},
+  publisher={Springer}
+}
+
+```
+
 Derek Hoiem
 July 30, 2012 (updated July 31, 2014)
 
