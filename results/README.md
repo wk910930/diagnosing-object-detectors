@@ -9,4 +9,4 @@
       #!/bin/sh
       find . -name "*.pdf" -print0 | xargs -P6 -0 -I file pdfcrop file file
    ```
-3) Use a latex compiler on detectionAnalysisAutoReportTemplate to make the pdf.
+3) Use a latex compiler on [detectionAnalysisAutoReportTemplate.tex](detectionAnalysisAutoReportTemplate.tex) to make the pdf.
