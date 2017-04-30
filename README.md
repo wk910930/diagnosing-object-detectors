@@ -69,8 +69,8 @@ by VOC annotations).  The file Labels.txt helps to explain the format. Each file
   * `DO_TEX`: creates tex files for compiling a report
 
 #### Other useful functions
-  * displayTopFP: displays most confident false positives
-  * displayRankedPositives: shows detection confidences of a subset of objects, from most to least confident
+  * [displayTopFP](src/displayTopFP.m): displays most confident false positives
+  * [displayRankedPositives](src/displayRankedPositives.m): shows detection confidences of a subset of objects, from most to least confident
 
 
 ##  Further Help 
