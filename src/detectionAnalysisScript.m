@@ -42,7 +42,9 @@ for d = 1:numel(detectors)  % loops through each detector and performs analysis
   
   % sets detector paths, may need to be modified for your detector
   [dataset_params.detpath, resultdir, detname] = setDetectorInfo(detector);
-  if ~exist(resultdir, 'file'), mkdir(resultdir); end;
+  if ~exist(resultdir, 'file')
+    mkdir(resultdir);
+  end
   
   % reads the records, attaches annotations: requires modification if not using VOC2007
   ann = readDatasetAnnotations(dataset, dataset_params);
@@ -67,7 +69,9 @@ for d = 1:numel(detectors)  % loops through each detector and performs analysis
         det = readDetections(dataset, dataset_params, ann, objname);
         
         outdir = resultdir;
-        if ~exist(outdir, 'file'), mkdir(outdir); end;
+        if ~exist(outdir, 'file')
+          mkdir(outdir);
+        end
         
         nposNorm = NORM_FRACT*det.nimages;
         
@@ -101,7 +105,9 @@ for d = 1:numel(detectors)  % loops through each detector and performs analysis
         
         nposNorm = NORM_FRACT*det.nimages;
         
-        if ~exist(outdir, 'file'), mkdir(outdir); end;
+        if ~exist(outdir, 'file')
+          mkdir(outdir);
+        end
         
         % Get indices of similar objects
         allsimilar = dataset_params.similar_classes;
@@ -178,7 +184,9 @@ for d = 1:numel(detectors)  % loops through each detector and performs analysis
   if DO_SHOW_SURPRISING_LOW_CONFIDENCE_DETECTIONS
     % Save the object examples that are classified less well than predicted
     nimages = 15; %#ok<UNRCH>
-    if ~exist(fullfile(resultdir, 'tp'), 'file'), mkdir(fullfile(resultdir, 'tp')); end;
+    if ~exist(fullfile(resultdir, 'tp'), 'file')
+      mkdir(fullfile(resultdir, 'tp'));
+    end
     objnames = intersect(objnames_selected, objnames_extra);
     for o = 1:numel(objnames)
       load(fullfile(resultdir, sprintf('results_%s_%s.mat', objnames{o}, localization)), 'result');
@@ -263,7 +271,9 @@ for d = 1:numel(detectors)  % loops through each detector and performs analysis
   end
   
   if DO_TEX
-    if ~exist(fullfile(resultdir, 'tex'), 'file'), mkdir(fullfile(resultdir, 'tex')); end;
+    if ~exist(fullfile(resultdir, 'tex'), 'file')
+      mkdir(fullfile(resultdir, 'tex'));
+    end
     system(sprintf('cp ../results/*.tex %s', fullfile(resultdir, 'tex')));
     for o = 1:numel(objnames_selected)
       writeTexHeader(fullfile(resultdir, 'tex'), detname)
