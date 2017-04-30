@@ -1,6 +1,6 @@
 # Diagnosing Object Detectors
 
-## Cition
+## Citation
 
 This project is modified from [here](http://dhoiem.web.engr.illinois.edu/projects/detectionAnalysis/). Please cite it in your publications if it helps your research:
 
