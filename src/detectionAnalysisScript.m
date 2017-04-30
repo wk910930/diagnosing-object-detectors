@@ -56,7 +56,7 @@ for d = 1:numel(detectors)  % loops through each detector and performs analysis
   % is a mean of confidence).
   if DO_TP_ANALYSIS
     
-    for o = 1:numel(objnames_selected)
+    for o = 1:numel(objnames_selected) %#ok<UNRCH>
       objname = objnames_selected{o};
       outfile_weak = fullfile(outdir, sprintf('results_%s_weak.mat', objname));
       outfile_strong = fullfile(outdir, sprintf('results_%s_strong.mat', objname));
@@ -90,7 +90,7 @@ for d = 1:numel(detectors)  % loops through each detector and performs analysis
   if DO_FP_ANALYSIS
     
     % for each object
-    for o = 1:numel(objnames_selected)
+    for o = 1:numel(objnames_selected) %#ok<UNRCH>
       objname = objnames_selected{o};
       outfile = fullfile(outdir, sprintf('results_fp_%s.mat', objname));
       if ~exist(outfile, 'file') || ~SKIP_SAVED_FILES
@@ -127,7 +127,7 @@ for d = 1:numel(detectors)  % loops through each detector and performs analysis
   %% Create plots and .txt files for true positive analysis
   if DO_TP_DISPLAY
     
-    localization = tp_display_localization;
+    localization = tp_display_localization; %#ok<UNRCH>
     outfile = fullfile(resultdir, sprintf('missed_object_characteristics_%s_%s.txt', detector, localization));
     if ~exist(outfile, 'file') || ~SKIP_SAVED_FILES
       detail_subset = [1 4 5 6]; % objects for which to create per-object detailed plots
@@ -177,7 +177,7 @@ for d = 1:numel(detectors)  % loops through each detector and performs analysis
   
   if DO_SHOW_SURPRISING_LOW_CONFIDENCE_DETECTIONS
     % Save the object examples that are classified less well than predicted
-    nimages = 15;
+    nimages = 15; %#ok<UNRCH>
     if ~exist(fullfile(resultdir, 'tp'), 'file'), mkdir(fullfile(resultdir, 'tp')); end;
     objnames = intersect(objnames_selected, objnames_extra);
     for o = 1:numel(objnames)
@@ -214,7 +214,11 @@ for d = 1:numel(detectors)  % loops through each detector and performs analysis
         det = readDetections(dataset, dataset_params, ann, objname);
         
         nimages = 20;
-        try; mkdir(fullfile(resultdir, 'fp')); catch; end;
+        try
+          mkdir(fullfile(resultdir, 'fp'));
+        catch
+          warning('Problem using mkdir.');
+        end
         displayTopFP(dataset, dataset_params, ann, objnames_selected{o}, result_fp(o), det, fullfile(resultdir, 'fp'), nimages);
       end
       
