@@ -65,7 +65,7 @@ If detections are bounding boxes and evaluation criteria is similar, use 'voc_co
 ##  Description of Folders 
 
 [annotations](annotations/): Contains annotations for objects (excluding "difficult" objects, as defined
-by VOC annotations).  The file Labels.txt helps to explain the format. Each file also contains whether the object was detected by the Felzenszwalb or the Vedaldi detector and the corresponding confidence, but this need not be used.
+by VOC annotations).  The file [Labels.txt](annotations/Labels.txt) helps to explain the format. Each file also contains whether the object was detected by the Felzenszwalb or the Vedaldi detector and the corresponding confidence, but this need not be used.
 
 [src](src/): Contains code for reading the annotations and storing them in the PASCAL VOC record structure.  Also contains code for computing normalized average precision and making comparisons between different subsets of the data.
 
